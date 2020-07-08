@@ -121,8 +121,16 @@
               "devServerTarget": "Enshrine:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "Enshrine"
+    }
+  },
+  "defaultProject": "Enshrine",
+  "cli": {
+    "analytics": "1610028c-6e57-40ea-a74a-76f80a0705da"
+  }
 }

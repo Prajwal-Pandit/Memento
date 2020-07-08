@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "Enshrine",
+      "public": "dist/Enshrine",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

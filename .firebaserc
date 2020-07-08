@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-memento": {
+      "hosting": {
+        "Enshrine": [
+          "angular-memento"
+        ]
+      }
+    }
+  }
+}
