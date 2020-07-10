@@ -1,1 +1,28 @@
-<p>image-list works!</p>
+<div class="imagebox text-center" *ngIf="!imageList">
+    <a routerLink="/image/upload">
+        <img src="/assets/img/insert.jpg" class="img-fluid">
+        <span class="imagebox-desc">Insert New Image</span>
+    </a>
+</div>  
+
+<div class="container" *ngIf="imageList">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imagebox text-center">
+                <a routerLink="/image/upload">
+                    <img src="/assets/img/insert.jpg" class="img mx-auto img-fluid rounded">
+                    <span class="imagebox-desc">Insert New Image</span>
+                </a>
+            </div> 
+        </div>
+        <div class="col-md-4" *ngFor="let i of rowIndexArray">          
+            <div class="imagebox" *ngIf="imageList[i]">
+                <a class="portfolio-box" [href]="imageList[i].imageUrl">
+                    <img [src]="imageList[i].imageUrl" class="img-fluid img rounded mb-3 mx-auto">
+                    <span class="imagebox-desc">{{imageList[i].caption}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

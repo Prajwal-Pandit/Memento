@@ -9,7 +9,7 @@ import { ImagesComponent } from './images/images.component';
 import { ImageComponent } from './images/image/image.component';
 import { ImageListComponent } from './images/image-list/image-list.component';
 import { environment } from '../environments/environment'
-import {ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
